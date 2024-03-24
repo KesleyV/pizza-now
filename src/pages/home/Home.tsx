@@ -9,15 +9,15 @@ const Home = () => {
   const foodList = [
     {
       label: "Pizza",
-      image: "src\\assets\\pizza 1.png", 
+      image: "src\\assets\\pizza 1.png",
     },
     {
       label: "Burger",
-      image: "src\\assets\\sandwich.png", 
+      image: "src\\assets\\sandwich.png",
     },
     {
       label: "Fries",
-      image: "src\\assets\\french_fried.png", 
+      image: "src\\assets\\french_fried.png",
     },
     {
       label: "Pack",
@@ -30,13 +30,13 @@ const Home = () => {
       image: "src\\assets\\pngegg.png",
       title: "Pizza with Pepperoni",
       deliveryTime: ["30", "50"],
-      price: 89 
+      price: 89,
     },
     {
       image: "src\\assets\\pngegg.png",
       title: "Pizza with Cheese",
       deliveryTime: ["60", "70"],
-      price: 57 
+      price: 57,
     },
   ];
 
@@ -52,11 +52,14 @@ const Home = () => {
           <SearchBar />
         </header>
         <div className="carousel-container">
-          <ImageCarouselPromotion title="Make Your First Order and Get " image="src\assets\pizza.png"/>
+          <ImageCarouselPromotion
+            title="Make Your First Order and Get "
+            image="src\assets\pizza.png"
+          />
           <div>
-          <FoodSelection foodList={foodList}/>
-          <ItemCardList cardList={itemCardList}/>
-        </div>
+            <FoodSelection foodList={foodList} />
+            <ItemCardList cardList={itemCardList} />
+          </div>
         </div>
       </div>
     </div>
